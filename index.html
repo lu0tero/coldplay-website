@@ -18,26 +18,39 @@
 <!-- Logo de la página con imagen jpg-->
     <header>
         <div class="logo__container">
-            <input type="checkbox" id="check">
-            <label for="check" class="bar-btn">
-                <i class="fa-solid fa-bars"></i>
-            </label>
             <img src="Imagenes/coldplay-logo.png" class="logo" alt="Logo" width="300"> <br>
         </div>
             
         
 <!-- Links internos de las secciones-->
-            <nav class="nav__container">
-                <div>
-                    <ul class="menu__container">
-                        <li class="menu aumentar"><a href="index.html" class="colornav">Noticias</a></li>
-                        <li class="menu aumentar"><a href="pages/Banda.html" class="colornav">Banda</a></li> 
-                        <li class="menu aumentar"><a href="pages/Discografía.html" class="colornav">Discografía</a></li>
-                        <li class="menu aumentar"><a href="pages/Galeria.html" class="colornav">Galeria</a></li>
-                        <li class="menu aumentar"><a href="pages/Tour.html" class="colornav">Tour</a></li>
-                    </ul>
-                </div>
-            </nav>
+
+    <nav class="navbar navbar-expand-lg navbar-light nav__container">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto  menu__container">
+            <li class="nav-item menu aumentar px-5">
+              <a href="index.html" class="colornav px-5">Noticias</a>
+            </li>
+            <li class="nav-item menu aumentar px-5">
+              <a  href="./pages/Banda.html" class="colornav px-5">Banda</a>
+            </li>
+            <li class="nav-item menu aumentar px-5">
+              <a  href="./pages/Discografía.html" class="colornav px-5">Discografía</a>
+            </li>
+            <li class="nav-item menu aumentar px-5">
+              <a  href="./pages/Galeria.html" class="colornav px-5">Galeria</a>
+            </li>
+            <li class="nav-item menu aumentar px-5">
+              <a  href="./pages/Tour.html" class="colornav px-5">Tour</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
     </header>
 
     <!-- Banner con imagenes-->

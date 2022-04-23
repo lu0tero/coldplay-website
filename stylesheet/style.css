@@ -18,14 +18,6 @@ header {
     margin-bottom: 30px;
 }
 
-#check {
-    display: none;
-}
-
-.bar-btn {
-    display: none;
-}
-
 nav {
     padding: 5px;
     background-image: url(../Imagenes/planets.jpg);
@@ -61,6 +53,11 @@ nav {
     color: rgba(255, 255, 255, 0.808);
     text-decoration: none;
 }
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 240, 240, 1.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
 
 /* FIN DEL HEADER */
 
@@ -224,7 +221,6 @@ h1.titlecolor {
 
 .bandbody main {
     text-align: justify;
-    margin: 8px;
     font-size: 20px;
 }
 
@@ -259,6 +255,10 @@ h1.titlecolor {
 
 .origin {
     height: 500px;
+}
+
+.card-title {
+    color: #e092d3;
 }
 
 .card {
@@ -410,16 +410,7 @@ div textarea {
 
 /* FIN DE SECCIÓN CONTACTO */
 
-.nav__toggle {
-    color: white;
-    background: none;
-    border: none;
-    font-size: 30px;
-    padding: 0 20px;
-    line-height: 60px;
 
-    display: none;
-}
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 480px) {
@@ -432,38 +423,28 @@ div textarea {
 
     .logo__container {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-        padding: 20px;
-        margin-bottom: 10px;
     }
 
     .menu {
-        font-size: 20px;
+        font-size: 25px;
     }
 
     header div img {
-        width: 200px;
+        width: 250px;
     }
 
-    #check {
-        display: none;
-    }
 
     .colornav {
         color: rgba(255, 255, 255, 0.808);
         text-decoration: none;
     }
     
-    .bar-btn {
-        display: flex;
-        justify-content: flex-start;
-        font-size: 25px;
-        color: white;
-    }
+/* BANNER */
 
-    .banner {
-        height: 150px;
+    .carousel {
+        display: none;
     }
 
 /* SECCIÓN NOTICIAS */    
@@ -495,38 +476,41 @@ div textarea {
         width: 100%;
     }
 
-/* DISCOGRAFÍA */
+/* BANDA */
 
-    .discbody iframe {
-        width: 400px;
-        margin-left: 30px;
+    .band__container img {
+        height: 300px;
     }
 
-/* CONTACTO */
-
-    .helpmessage {
+    .band__container p {
         font-size: 20px;
     }
 
-
-    #datastyle {
-        width: 250px;
+    .members__container img {
+        height: 280px;
+    }
+    
+    .bandbody main h2 {
+        font-size: 35px;
+    }
+    
+    .members__container {
+        gap: 5px;
+    }
+    
+    .card {
+        background-color: #1a104dbe;
+    }
+    
+    .card-body li {
+        font-size: 20px;
     }
 
-    .submit__button {
-        margin-bottom: 10px;
-    }
+/* DISCOGRAFÍA */
 
-    .opinion textarea {
-        width: 10px;
-        height: 20px;
-        padding: 200px;
-    }
-
-    .contactbody form div h3 {
-        font-size: 30px;
-        text-align: center;
-    }
+.disco__container {
+    gap: 20px;
+}
 
 /* TOUR */
 
@@ -534,11 +518,52 @@ div textarea {
         display: flex;
         justify-content: center;
         margin-top: 30px;
+        margin: 10px;
     }
 
     .tourbody table {
-        font-size: 15px;
-        margin-bottom: 200px;
+        font-size: 20px;
+        margin-bottom: 10px;
+        margin-left: 0;
+    }
+       
+    .table th {
+        font-size: 25px;
+    }
+    
+    .table button {
+        width: 100%;
+    }
+
+/* CONTACTO */
+
+    .helpmessage h2 {
+        font-size: 30px;
+    }
+
+    .helpmessage {
+        margin: 30px;
+        font-size: 25px;
+    }
+    
+    .contactbody form div h3 {
+        font-size: 25px;
+    }
+
+    .form__div {
+        align-items: center;
+        margin-bottom: 40px; 
+    }
+    
+    
+    .opinion textarea {
+        width: 90%;
+    }
+
+    
+     .submit__button {
+        width: 30%;
+        font-size: 20px;
     }
 
 }
