@@ -1,0 +1,41 @@
+.tourbody {
+    background-image: url(../Imagenes/planet4.webp);
+    color: white;
+    font-family: 'PT Serif', serif;
+        main {
+            display: flex;
+            justify-content: center;
+            margin: 30px;
+            flex-direction: column;
+                h2 {
+                    font-size: 30px;
+                    margin-bottom: 40px;
+                    color: #ee4cd3;
+                    text-shadow: 2px 2px 2px black;
+                }
+                .table {
+                    background-color: #b40099af;
+                    font-size: 25px;
+                        th {
+                            color: white;
+                            text-shadow: 2px 2px 2px black;
+                            font-size: 30px;
+                        }
+                        td {
+                            color: white;
+                            text-shadow: 2px 2px 2px black;
+                        }
+                
+                        button {
+                            background: #e092d3;
+                            border-radius: 5px;
+                            width: 80%;
+                            color: white;
+                            text-shadow: 2px 2px 2px black;
+                            &:hover {
+                                background-color: #0f0251;
+                            }
+                        }
+                }
+        }
+}

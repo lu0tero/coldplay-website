@@ -1,0 +1,157 @@
+@media screen and (max-width: 480px) {
+
+    /* HEADER */
+
+    header {
+        width: 100%;
+            .logo__container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                    .logo {
+                        width: 250px;
+                    }
+            }
+            .menu {
+                font-size: 25px;
+                    .colornav {
+                        color: rgba(255, 255, 255, 0.808);
+                        text-decoration: none; 
+                    }
+            }
+    }
+
+    /* BANNER */
+
+    .carousel {
+        display: none;
+    }
+
+    /* SECCIÓN NOTICIAS */
+
+    iframe.news {
+        height: 400px;
+        width: 80%;
+        border: solid ;
+        border-color: #b4009948;
+     }
+
+     /* FOOTER */
+
+     footer {
+        padding: 15px; 
+            .contactocolor {
+                font-size: 25px;
+            }
+            .footer__text {
+                font-size: 18px;
+            } 
+    }
+
+    /* BANDA */
+
+    .bandbody {
+        main {
+            h2 {
+                font-size: 35px;
+            }
+
+            .card {
+                background-color: #1a104dbe;
+            }
+
+            .band__container {       
+                p {
+                    font-size: 20px;
+                }   
+                    .band__all {
+                        img {
+                            height: 300px;
+                        }
+                    }
+            
+            }
+
+            .members__container {
+                gap: 5px;
+                    img{
+                        height: 280px;
+                    }
+                    .card-body {
+                        li {
+                            font-size: 20px;
+                        }
+                    }
+            }
+        }
+
+    }
+
+    /* GALERIA */
+
+    .titlecolor {
+        width: 100%;
+    }
+
+    /* DISCOGRAFÍA */
+
+    .disco__container {
+        gap: 20px;
+    }
+
+    /* TOUR */
+
+    .tourbody {
+        main {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            margin: 10px;
+                table {
+                    font-size: 20px;
+                    margin-bottom: 10px;
+                    margin-left: 0;
+                        th {
+                            font-size: 25px;
+                        }
+                                           
+                }    
+                
+        }
+
+    }
+
+    /* CONTACTO */
+
+    .contactbody {
+
+        .helpmessage {
+            margin: 30px;
+            font-size: 25px;
+                h2 {
+                    font-size: 30px;
+                }
+        }
+        .form__div {
+            align-items: center;
+            margin-bottom: 40px; 
+        }
+
+        .form__title {
+            font-size: 25px;
+        }
+    
+        .opinion {
+            textarea {
+                width: 90%;
+            }
+
+            .submit__button {
+                width: 30%;
+                font-size: 20px;
+            }
+        }
+    }
+    
+
+}

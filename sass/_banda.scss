@@ -1,0 +1,40 @@
+.bandbody {
+    font-family: 'PT Serif', serif;
+    background-image: url(../Imagenes/planet1.webp);
+    color: white;
+        main {
+            text-align: justify;
+            font-size: 20px;
+            text-shadow: 2px 2px 2px black;
+                h2 {
+                    margin-top: 10px;
+                    margin-bottom: 20px;
+                    color: #e092d3;
+                }
+            .card {
+                background-color: #1a104d;
+            }
+            .card-title {
+                color: #e092d3;
+            }
+            .band__container {
+                display: flex;
+                justify-content: center;
+                    .band__all {
+                        display: flex;
+                        justify-content: center;
+                        width: 1200px;
+                            .origin {
+                                height: 500px;
+                            }
+                    }
+            }    
+            .members__container {
+                display: flex;
+                gap: 30px;
+                flex-wrap: wrap;
+                justify-content: center;
+                text-align: center
+            } 
+        }
+}

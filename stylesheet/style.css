@@ -348,9 +348,6 @@ h1.titlecolor {
     text-shadow: 2px 2px 2px black;
 }
 
-.contactfooter {
-    margin-top: 350px;
-}
 
 /* SECCIÓN CONTACTO */
 
@@ -413,7 +410,7 @@ div textarea {
     box-shadow: 0, 0, 0, 0.40px black;
 }
 
-.contactbody form div h3 {
+.form__title {
     margin-bottom: 10px;
     color: white;
     font-size: 35px;
@@ -492,7 +489,7 @@ div textarea {
 /* BANDA */
 
     .band__container img {
-        height: 300px;
+       /*  height: 300px; */
     }
 
     .band__container p {
@@ -559,7 +556,7 @@ div textarea {
         font-size: 25px;
     }
     
-    .contactbody form div h3 {
+    .form__title {
         font-size: 25px;
     }
 
