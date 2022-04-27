@@ -4,6 +4,14 @@
   padding: 0;
   box-sizing: content-box; }
 
+@font-face {
+  font-family: LibreFranklin-Thin;
+  src: url(./fonts/LibreFranklin-Thin.ttf); }
+
+@font-face {
+  font-family: LibreFranklin-Bold;
+  src: url(./fonts/LibreFranklin-Bold.ttf); }
+
 /* COMIENZO DEL HEADER */
 header {
   background-color: #0f0251; }
@@ -44,18 +52,58 @@ body.planets {
   body.planets .navbar-light .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 240, 240, 1.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
 
-.news__container {
-  display: grid;
-  grid-template-columns: 100%;
-  place-items: center;
-  gap: 70px;
-  margin-top: 20px;
-  margin-bottom: 20px; }
-  .news__container .news {
-    height: 550px;
-    width: 50%;
-    border: solid;
-    border-color: #b4009948; }
+/* SECCIÓN NOTICIAS */
+#news-feed {
+  margin-top: 30px; }
+  #news-feed .news-block {
+    display: flex;
+    width: 100%;
+    gap: 30px; }
+    #news-feed .news-block .left-block {
+      width: 65%; }
+      #news-feed .news-block .left-block article {
+        height: 100%; }
+    #news-feed .news-block .right-block {
+      width: 35%; }
+      #news-feed .news-block .right-block article {
+        height: 50%; }
+  #news-feed article {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-top: 3px; }
+  #news-feed h1 {
+    margin: 25px 0 20px 0;
+    font-family: LibreFranklin-Bold, sans-serif;
+    font-size: 40px;
+    color: #e092d3; }
+  #news-feed h2 {
+    color: #e092d3;
+    font-family: LibreFranklin-Bold, sans-serif;
+    font-size: 24px;
+    flex-grow: 1; }
+  #news-feed p {
+    flex-grow: 1;
+    font-family: LibreFranklin-Thin, sans-serif;
+    color: white;
+    font-size: 20px; }
+  #news-feed figure {
+    position: relative; }
+    #news-feed figure img {
+      width: 100%;
+      padding-bottom: 5px;
+      border-bottom: 1px solid #e092d3; }
+    #news-feed figure figcaption {
+      width: auto;
+      padding: 15px;
+      border-radius: 5px;
+      font-family: LibreFranklin-Bold, sans-serif;
+      background: rgba(0, 0, 0, 0.6);
+      position: absolute;
+      bottom: 15px;
+      left: 15px; }
+      #news-feed figure figcaption span {
+        color: #f0faf0; }
 
 /* FOOTER */
 footer {

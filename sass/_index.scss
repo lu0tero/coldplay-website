@@ -5,17 +5,70 @@ body.planets {
         }
 }
 
-.news__container{
-    display: grid;
-    grid-template-columns: 100%;
-    place-items: center;
-    gap: 70px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-        .news {
-            height: 550px;
-            width: 50%;
-            border: solid ;
-            border-color: #b4009948;
+/* SECCIÓN NOTICIAS */
+
+#news-feed {
+    margin-top: 30px;
+        .news-block {
+            display: flex;
+            width: 100%;
+            gap: 30px;
+                .left-block {
+                    width: 65%;
+                        article {
+                            height: 100%;
+                        }
+                }
+                .right-block {
+                    width: 35%;
+                        article {
+                            height: 50%;
+                        }
+                }
+        }
+        article {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            margin-top: 3px;
+        }    
+        h1 {
+            margin: 25px 0 20px 0;
+            font-family: LibreFranklin-Bold, sans-serif;
+            font-size: 40px;
+            color: #e092d3;
+        }
+        h2 {
+            color: #e092d3;
+            font-family: LibreFranklin-Bold, sans-serif;
+            font-size: 24px;
+            flex-grow: 1;
+        }
+        p {
+            flex-grow: 1;
+            font-family: LibreFranklin-Thin, sans-serif;
+            color: white;
+            font-size: 20px;
+        }
+        figure {
+            position: relative;
+                img {
+                    width: 100%;
+                    padding-bottom: 5px;
+                    border-bottom: 1px solid #e092d3; 
+                }
+                figcaption {
+                    width: auto;
+                    padding: 15px;
+                    border-radius: 5px;
+                    font-family: LibreFranklin-Bold, sans-serif;
+                    background: rgba(0, 0, 0, 0.6);
+                    position: absolute;
+                    bottom: 15px;
+                    left: 15px;
+                        span {
+                            color: rgb(240, 250, 240); 
+                        }
+                }
         }
 }

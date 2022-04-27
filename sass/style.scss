@@ -3,6 +3,18 @@
     padding: 0;
     box-sizing: content-box;
 }
+
+@font-face {
+    font-family: LibreFranklin-Thin;
+    src: url(./fonts/LibreFranklin-Thin.ttf)
+}
+
+@font-face {
+    font-family: LibreFranklin-Bold;
+    src: url(./fonts/LibreFranklin-Bold.ttf);
+}
+
+
 /* COMIENZO DEL HEADER */
 
 @import "header.scss";
