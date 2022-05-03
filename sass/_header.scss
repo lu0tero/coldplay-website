@@ -1,8 +1,10 @@
+// MIXINS
+@import 'mixins';
+
 header {
     background-color: #0f0251;
         .logo__container {
-            display: flex;
-            justify-content: center;
+            @include boxcenter();
             align-items: center;
             margin-bottom: 30px;
         }

@@ -1,3 +1,9 @@
+// MIXINS
+@import 'mixins';
+
+// EXTEND
+@import 'extend';
+
 .contactbody {
     background-image: url(../Imagenes/planet3.webp);
     color: white;
@@ -15,9 +21,8 @@
                 }
         }
         .form__div {
-            display: flex;
+            @include boxcenter();
             flex-direction: column;
-            justify-content: center;
             gap: 30px;
             margin-bottom: 55px; 
                 #datastyle {
@@ -37,16 +42,13 @@
                     border-radius: 10px;
                     box-shadow: 0, 0, 0, 0.40px black;
                 }
-                .submit__button {
-                    cursor: pointer;
-                    border-radius: 10px;
-                    padding: 5px;
-                    width: 10%;
-                    background-color: #ee4cd3;
-                    color: white;
-                    text-shadow: 2px 2px 2px black;
-                    font-size: 20px;
-                }    
+
+                .button__container {
+                    display: flex;
+                    justify-content: space-between; 
+                }
+        
+        
         }
         .form__title {
             margin-bottom: 10px;

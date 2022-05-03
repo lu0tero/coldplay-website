@@ -266,16 +266,32 @@ h1.titlecolor {
       .tourbody main .table td {
         color: white;
         text-shadow: 2px 2px 2px black; }
-      .tourbody main .table button {
+      .tourbody main .table button, .tourbody main .table .submit__button, .tourbody main .table .reset__button {
         background: #e092d3;
         border-radius: 5px;
         width: 80%;
         color: white;
         text-shadow: 2px 2px 2px black; }
-        .tourbody main .table button:hover {
+        .tourbody main .table button:hover, .tourbody main .table .submit__button:hover, .tourbody main .table .reset__button:hover {
           background-color: #0f0251; }
 
 /* SECCIÓN CONTACTO */
+button, .submit__button, .reset__button {
+  background: #e092d3;
+  border-radius: 5px;
+  color: white;
+  text-shadow: 2px 2px 2px black; }
+
+.submit__button {
+  width: 80%; }
+  .submit__button:hover {
+    background-color: #0f0251; }
+
+.reset__button {
+  width: 80%; }
+  .reset__button:hover {
+    background-color: #0f0251; }
+
 .contactbody {
   background-image: url(../Imagenes/planet3.webp);
   color: white;
@@ -292,8 +308,8 @@ h1.titlecolor {
       text-shadow: 2px 2px 2px #ee4cd3; }
   .contactbody .form__div {
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    flex-direction: column;
     gap: 30px;
     margin-bottom: 55px; }
     .contactbody .form__div #datastyle {
@@ -310,15 +326,9 @@ h1.titlecolor {
     .contactbody .opinion div textarea {
       border-radius: 10px;
       box-shadow: 0, 0, 0, 0.40px black; }
-    .contactbody .opinion .submit__button {
-      cursor: pointer;
-      border-radius: 10px;
-      padding: 5px;
-      width: 10%;
-      background-color: #ee4cd3;
-      color: white;
-      text-shadow: 2px 2px 2px black;
-      font-size: 20px; }
+    .contactbody .opinion .button__container {
+      display: flex;
+      justify-content: space-between; }
   .contactbody .form__title {
     margin-bottom: 10px;
     color: white;

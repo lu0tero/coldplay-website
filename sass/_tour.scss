@@ -1,10 +1,12 @@
+// MIXINS
+@import 'mixins';
+
 .tourbody {
     background-image: url(../Imagenes/planet4.webp);
     color: white;
     font-family: 'PT Serif', serif;
         main {
-            display: flex;
-            justify-content: center;
+            @include boxcenter();
             margin: 30px;
             flex-direction: column;
                 h2 {

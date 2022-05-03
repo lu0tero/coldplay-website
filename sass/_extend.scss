@@ -1,0 +1,23 @@
+button {
+    background: #e092d3;
+    border-radius: 5px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+.submit__button {
+    @extend button;
+    &:hover {
+        background-color: #0f0251;
+    }
+    width: 80%
+    
+}
+
+.reset__button {
+    @extend button;
+    &:hover {
+        background-color: #0f0251;
+    }
+    width: 80%
+}

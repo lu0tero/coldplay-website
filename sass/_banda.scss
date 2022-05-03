@@ -1,3 +1,6 @@
+// MIXINS
+@import 'mixins';
+
 .bandbody {
     font-family: 'PT Serif', serif;
     background-image: url(../Imagenes/planet1.webp);
@@ -18,8 +21,7 @@
                 color: #e092d3;
             }
             .band__container {
-                display: flex;
-                justify-content: center;
+                @include boxcenter();
                     .band__all {
                         display: flex;
                         justify-content: center;

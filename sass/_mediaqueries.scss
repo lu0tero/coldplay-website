@@ -1,3 +1,6 @@
+// MIXINS
+@import 'mixins';
+
 @media screen and (max-width: 480px) {
 
     /* HEADER */
@@ -5,8 +8,7 @@
     header {
         width: 100%;
             .logo__container {
-                display: flex;
-                justify-content: center;
+                @include boxcenter();
                 align-items: center;
                     .logo {
                         width: 250px;
@@ -103,8 +105,7 @@
 
     .tourbody {
         main {
-            display: flex;
-            justify-content: center;
+            @include boxcenter();
             margin-top: 30px;
             margin: 10px;
                 table {
