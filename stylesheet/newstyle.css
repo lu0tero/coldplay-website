@@ -12,6 +12,22 @@
   font-family: LibreFranklin-Bold;
   src: url(./fonts/LibreFranklin-Bold.ttf); }
 
+button, .submit__button, .reset__button {
+  background: #e092d3;
+  border-radius: 5px;
+  color: white;
+  text-shadow: 2px 2px 2px black; }
+
+.submit__button {
+  width: 80%; }
+  .submit__button:hover {
+    background-color: #0f0251; }
+
+.reset__button {
+  width: 80%; }
+  .reset__button:hover {
+    background-color: #0f0251; }
+
 /* COMIENZO DEL HEADER */
 header {
   background-color: #0f0251; }
