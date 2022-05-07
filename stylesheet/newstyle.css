@@ -120,6 +120,17 @@ body.planets {
       left: 15px; }
       #news-feed figure figcaption span {
         color: #f0faf0; }
+  #news-feed .news-block-3 {
+    display: flex;
+    width: 100%;
+    gap: 30px; }
+    #news-feed .news-block-3 article {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      margin-top: 3px; }
+  #news-feed .news-block-4 {
+    display: none; }
 
 /* FOOTER */
 footer {
@@ -171,16 +182,19 @@ footer {
   100% {
     left: 0; } }
 
-h1.titlecolor {
-  color: #c748b4;
-  width: 100%;
-  padding: 5px;
-  font-size: 40px;
-  font-family: 'PT Serif', serif;
-  text-shadow: 2px 2px 2px black;
-  animation-name: left-in;
-  animation-duration: 0.5s;
-  position: relative; }
+.title__container {
+  display: flex;
+  justify-content: center;
+  text-align: center; }
+  .title__container h1.titlecolor {
+    color: #c748b4;
+    width: 100%;
+    font-size: 40px;
+    font-family: 'PT Serif', serif;
+    text-shadow: 2px 2px 2px black;
+    animation-name: left-in;
+    animation-duration: 0.5s;
+    position: relative; }
 
 /* SECCIÓN BANDA */
 .bandbody {
@@ -194,6 +208,7 @@ h1.titlecolor {
     .bandbody main h2 {
       margin-top: 10px;
       margin-bottom: 20px;
+      padding: 10px;
       color: #e092d3; }
     .bandbody main .card {
       background-color: #1a104d; }
@@ -265,7 +280,8 @@ h1.titlecolor {
   .tourbody main {
     display: flex;
     justify-content: center;
-    margin: 30px;
+    margin: 10px;
+    margin-top: 50px;
     flex-direction: column; }
     .tourbody main h2 {
       font-size: 30px;
@@ -274,7 +290,8 @@ h1.titlecolor {
       text-shadow: 2px 2px 2px black; }
     .tourbody main .table {
       background-color: #b40099af;
-      font-size: 25px; }
+      font-size: 25px;
+      margin-bottom: 100px; }
       .tourbody main .table th {
         color: white;
         text-shadow: 2px 2px 2px black;
@@ -285,7 +302,7 @@ h1.titlecolor {
       .tourbody main .table button, .tourbody main .table .submit__button, .tourbody main .table .reset__button {
         background: #e092d3;
         border-radius: 5px;
-        width: 80%;
+        width: 100%;
         color: white;
         text-shadow: 2px 2px 2px black; }
         .tourbody main .table button:hover, .tourbody main .table .submit__button:hover, .tourbody main .table .reset__button:hover {
@@ -350,6 +367,8 @@ button, .submit__button, .reset__button {
     color: white;
     font-size: 35px;
     text-shadow: 2px 2px 2px #ee4cd3; }
+  .contactbody footer {
+    margin-top: 40px; }
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 480px) {
@@ -371,11 +390,73 @@ button, .submit__button, .reset__button {
   .carousel {
     display: none; }
   /* SECCIÓN NOTICIAS */
-  iframe.news {
-    height: 400px;
-    width: 80%;
-    border: solid;
-    border-color: #b4009948; }
+  #news-feed {
+    margin-top: 30px;
+    padding: 0; }
+    #news-feed .news-block {
+      display: flex;
+      width: 100%;
+      gap: 0; }
+      #news-feed .news-block .left-block {
+        width: 50%; }
+        #news-feed .news-block .left-block article {
+          height: 100%; }
+          #news-feed .news-block .left-block article h1 {
+            font-size: 35px;
+            margin-top: 0; }
+      #news-feed .news-block .right-block {
+        width: 50%; }
+        #news-feed .news-block .right-block article {
+          height: 50%; }
+    #news-feed article {
+      padding-left: 10px;
+      padding-right: 10px;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      margin-top: 3px; }
+    #news-feed h1 {
+      margin: 25px 0 20px 0;
+      font-family: LibreFranklin-Bold, sans-serif;
+      font-size: 40px;
+      color: #e092d3; }
+    #news-feed h2 {
+      color: #e092d3;
+      font-family: LibreFranklin-Bold, sans-serif;
+      font-size: 24px;
+      flex-grow: 1; }
+    #news-feed p {
+      flex-grow: 1;
+      font-family: LibreFranklin-Thin, sans-serif;
+      color: white;
+      font-size: 20px; }
+    #news-feed figure {
+      position: relative; }
+      #news-feed figure img {
+        width: 100%;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #e092d3; }
+      #news-feed figure figcaption {
+        display: none; }
+    #news-feed .news-block-3 {
+      display: flex;
+      width: 100%;
+      gap: 0; }
+      #news-feed .news-block-3 .block-3 {
+        display: none; }
+      #news-feed .news-block-3 article {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        margin-top: 3px; }
+    #news-feed .news-block-4 {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      width: 100%; }
+      #news-feed .news-block-4 .block-3 img {
+        width: 300px;
+        height: 200px; }
   /* FOOTER */
   footer {
     padding: 15px; }
@@ -388,11 +469,13 @@ button, .submit__button, .reset__button {
     font-size: 35px; }
   .bandbody main .card {
     background-color: #1a104dbe; }
-  .bandbody main .band__container p {
-    font-size: 20px; }
-  .bandbody main .band__container .band__all img {
-    height: 300px; }
+  .bandbody main .band__container {
+    padding: 5px; }
+    .bandbody main .band__container .band__all .origin {
+      width: 100%;
+      height: 250px; }
   .bandbody main .members__container {
+    padding: 5px;
     gap: 5px; }
     .bandbody main .members__container img {
       height: 280px; }
@@ -408,10 +491,12 @@ button, .submit__button, .reset__button {
   .tourbody main {
     display: flex;
     justify-content: center;
-    margin-top: 30px;
-    margin: 10px; }
+    width: 100%;
+    margin: 0; }
+    .tourbody main h2 {
+      padding: 5px; }
     .tourbody main table {
-      font-size: 20px;
+      font-size: 15px;
       margin-bottom: 10px;
       margin-left: 0; }
       .tourbody main table th {
@@ -427,8 +512,18 @@ button, .submit__button, .reset__button {
     margin-bottom: 40px; }
   .contactbody .form__title {
     font-size: 25px; }
-  .contactbody .opinion textarea {
-    width: 90%; }
-  .contactbody .opinion .submit__button {
-    width: 30%;
-    font-size: 20px; } }
+  .contactbody .col {
+    padding: 0; }
+    .contactbody .col .opinion {
+      width: 100%; }
+      .contactbody .col .opinion textarea {
+        width: 90%; }
+      .contactbody .col .opinion .button__container {
+        display: flex;
+        justify-content: space-evenly; }
+        .contactbody .col .opinion .button__container .submit__button {
+          width: 30%;
+          font-size: 20px; }
+        .contactbody .col .opinion .button__container .reset__button {
+          width: 30%;
+          font-size: 20px; } }

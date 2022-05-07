@@ -44,18 +44,24 @@
     }
 }
 
-h1.titlecolor {
-    color: #c748b4;
-    width: 100%;
-    padding: 5px;
-    font-size: 40px;
-    font-family: 'PT Serif', serif;
-    text-shadow: 2px 2px 2px black;
-    animation-name: left-in;
-    animation-duration: 0.5s;
-    position: relative;
-}
+.title__container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+        h1.titlecolor {
+            color: #c748b4;
+            width: 100%;
+            font-size: 40px;
+            font-family: 'PT Serif', serif;
+            text-shadow: 2px 2px 2px black;
+            animation-name: left-in;
+            animation-duration: 0.5s;
+            position: relative;
+        }
 
+}    
+    
 /* SECCIÓN BANDA */
 
 @import "banda.scss";

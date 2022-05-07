@@ -31,12 +31,95 @@
 
     /* SECCIÓN NOTICIAS */
 
-    iframe.news {
-        height: 400px;
-        width: 80%;
-        border: solid ;
-        border-color: #b4009948;
-     }
+    #news-feed {
+        margin-top: 30px;
+        padding: 0;
+            .news-block {
+                display: flex;
+                width: 100%;
+                gap: 0;
+                    .left-block {
+                        width: 50%;
+                            article {
+                                height: 100%;
+                                    h1 {
+                                        font-size: 35px;
+                                        margin-top: 0;
+                                    }
+                            }
+                    }
+                    .right-block {
+                        width: 50%;
+                            article {
+                                height: 50%;
+                            }
+                    }
+            }
+            article {
+                padding-left: 10px;
+                padding-right: 10px;
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                margin-top: 3px;
+            }    
+            h1 {
+                margin: 25px 0 20px 0;
+                font-family: LibreFranklin-Bold, sans-serif;
+                font-size: 40px;
+                color: #e092d3;
+            }
+            h2 {
+                color: #e092d3;
+                font-family: LibreFranklin-Bold, sans-serif;
+                font-size: 24px;
+                flex-grow: 1;
+            }
+            p {
+                flex-grow: 1;
+                font-family: LibreFranklin-Thin, sans-serif;
+                color: white;
+                font-size: 20px;
+            }
+            figure {
+                position: relative;
+                    img {
+                        width: 100%;
+                        padding-bottom: 5px;
+                        border-bottom: 1px solid #e092d3; 
+                    }
+                    figcaption {
+                        display: none;
+                    }
+            }
+        .news-block-3 {
+            display: flex;
+            width: 100%;
+            gap: 0;   
+                .block-3 {
+                    display: none;
+                } 
+                article {
+                    display: flex;
+                    flex-direction: column;
+                    height: 100%;
+                    margin-top: 3px;
+                }
+        }    
+        .news-block-4 {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+                .block-3 {
+                    img {
+                        width: 300px;
+                        height: 200px;
+                    }
+                }
+        }   
+    }
+
 
      /* FOOTER */
 
@@ -63,18 +146,18 @@
             }
 
             .band__container {       
-                p {
-                    font-size: 20px;
-                }   
+                padding: 5px;
                     .band__all {
-                        img {
-                            height: 300px;
+                        .origin {
+                            width: 100%;
+                            height: 250px;
                         }
                     }
             
             }
 
             .members__container {
+                padding: 5px;
                 gap: 5px;
                     img{
                         height: 280px;
@@ -93,6 +176,7 @@
 
     .titlecolor {
         width: 100%;
+        
     }
 
     /* DISCOGRAFÍA */
@@ -104,18 +188,21 @@
     /* TOUR */
 
     .tourbody {
+
         main {
             @include boxcenter();
-            margin-top: 30px;
-            margin: 10px;
+            width: 100%;
+            margin: 0;
+                h2 {
+                    padding: 5px;
+                }
                 table {
-                    font-size: 20px;
+                    font-size: 15px;
                     margin-bottom: 10px;
                     margin-left: 0;
                         th {
                             font-size: 25px;
-                        }
-                                           
+                        }   
                 }    
                 
         }
@@ -125,34 +212,46 @@
     /* CONTACTO */
 
     .contactbody {
-
-        .helpmessage {
-            margin: 30px;
-            font-size: 25px;
-                h2 {
-                    font-size: 30px;
-                }
-        }
-        .form__div {
-            align-items: center;
-            margin-bottom: 40px; 
-        }
-
-        .form__title {
-            font-size: 25px;
-        }
-    
-        .opinion {
-            textarea {
-                width: 90%;
+        
+            .helpmessage {
+                margin: 30px;
+                font-size: 25px;
+                    h2 {
+                        font-size: 30px;
+                    }
+            }
+            .form__div {
+                align-items: center;
+                margin-bottom: 40px; 
             }
 
-            .submit__button {
-                width: 30%;
-                font-size: 20px;
+            .form__title {
+                font-size: 25px;
             }
-        }
+        
+            .col {
+                padding: 0;
+                    .opinion {
+                        width: 100%;
+                            textarea {
+                                width: 90%;
+                            }
+                            .button__container {
+                                display: flex;
+                                justify-content: space-evenly;
+                                    .submit__button {
+                                        width: 30%;
+                                        font-size: 20px;
+                                    }
+                
+                                    .reset__button {
+                                        width: 30%;
+                                        font-size: 20px;
+                                    }
+                            }
+                            
+                    }
+            }
     }
     
-
 }
