@@ -291,7 +291,8 @@ footer {
     .tourbody main .table {
       background-color: #b40099af;
       font-size: 25px;
-      margin-bottom: 100px; }
+      margin-bottom: 100px;
+      width: 100%; }
       .tourbody main .table th {
         color: white;
         text-shadow: 2px 2px 2px black;
@@ -339,34 +340,58 @@ button, .submit__button, .reset__button {
       margin-bottom: 15px;
       color: #e092d3;
       text-shadow: 2px 2px 2px #ee4cd3; }
-  .contactbody .form__div {
+  .contactbody .container {
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    gap: 30px;
-    margin-bottom: 55px; }
-    .contactbody .form__div #datastyle {
-      border-radius: 10px;
-      border-color: #e092d3;
-      width: 80%;
-      padding: 10px;
-      text-align: center;
-      font-size: 15px; }
-  .contactbody .opinion {
+    padding: 0;
+    width: 100%; }
+    .contactbody .container .row {
+      width: 100%; }
+      .contactbody .container .row .form__div {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 30px; }
+        .contactbody .container .row .form__div #datastyle {
+          border-color: #e092d3;
+          width: 100%;
+          padding: 10px;
+          text-align: center;
+          font-size: 15px; }
+        .contactbody .container .row .form__div .form__title {
+          margin-bottom: 10px;
+          color: white;
+          font-size: 35px;
+          text-shadow: 2px 2px 2px #ee4cd3; }
+  .contactbody .container {
     display: flex;
-    flex-direction: column;
-    gap: 10px; }
-    .contactbody .opinion div textarea {
-      border-radius: 10px;
-      box-shadow: 0, 0, 0, 0.40px black; }
-    .contactbody .opinion .button__container {
-      display: flex;
-      justify-content: space-between; }
-  .contactbody .form__title {
-    margin-bottom: 10px;
-    color: white;
-    font-size: 35px;
-    text-shadow: 2px 2px 2px #ee4cd3; }
+    justify-content: center; }
+    .contactbody .container .row {
+      width: 100%; }
+      .contactbody .container .row .opinion {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        flex-direction: column;
+        gap: 10px; }
+        .contactbody .container .row .opinion div {
+          width: 100%; }
+          .contactbody .container .row .opinion div textarea {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0, 0, 0, 0.40px black; }
+        .contactbody .container .row .opinion .button__container {
+          display: flex;
+          justify-content: space-between; }
+        .contactbody .container .row .opinion .form__title {
+          margin-bottom: 10px;
+          color: white;
+          font-size: 30px;
+          text-shadow: 2px 2px 2px #ee4cd3; }
   .contactbody footer {
     margin-top: 40px; }
 
@@ -495,35 +520,54 @@ button, .submit__button, .reset__button {
     margin: 0; }
     .tourbody main h2 {
       padding: 5px; }
-    .tourbody main table {
+    .tourbody main .table {
       font-size: 15px;
       margin-bottom: 10px;
       margin-left: 0; }
-      .tourbody main table th {
-        font-size: 25px; }
+      .tourbody main .table th {
+        font-size: 20px; }
   /* CONTACTO */
   .contactbody .helpmessage {
-    margin: 30px;
-    font-size: 25px; }
+    margin: 30px; }
     .contactbody .helpmessage h2 {
-      font-size: 30px; }
-  .contactbody .form__div {
-    align-items: center;
-    margin-bottom: 40px; }
-  .contactbody .form__title {
-    font-size: 25px; }
-  .contactbody .col {
-    padding: 0; }
-    .contactbody .col .opinion {
+      margin-bottom: 15px; }
+  .contactbody .container {
+    display: flex;
+    justify-content: center;
+    width: 100%; }
+    .contactbody .container .row {
       width: 100%; }
-      .contactbody .col .opinion textarea {
-        width: 90%; }
-      .contactbody .col .opinion .button__container {
+      .contactbody .container .row .form__div {
         display: flex;
-        justify-content: space-evenly; }
-        .contactbody .col .opinion .button__container .submit__button {
-          width: 30%;
-          font-size: 20px; }
-        .contactbody .col .opinion .button__container .reset__button {
-          width: 30%;
-          font-size: 20px; } }
+        justify-content: center;
+        width: 100%; }
+        .contactbody .container .row .form__div #datastyle {
+          width: 95%;
+          font-size: 15px; }
+        .contactbody .container .row .form__div .form__title {
+          font-size: 30px; }
+  .contactbody .container {
+    display: flex;
+    justify-content: center; }
+    .contactbody .container .row {
+      width: 100%; }
+      .contactbody .container .row .opinion {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        flex-direction: column;
+        gap: 10px; }
+        .contactbody .container .row .opinion div {
+          width: 100%; }
+          .contactbody .container .row .opinion div textarea {
+            width: 90%;
+            border-radius: 10px;
+            box-shadow: 0, 0, 0, 0.40px black; }
+        .contactbody .container .row .opinion .button__container {
+          display: flex;
+          justify-content: space-between; }
+        .contactbody .container .row .opinion .form__title {
+          font-size: 30px; }
+  .contactbody footer {
+    margin-top: 40px; } }
