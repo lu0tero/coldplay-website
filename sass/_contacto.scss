@@ -20,42 +20,70 @@
                     text-shadow: 2px 2px 2px #ee4cd3;
                 }
         }
-        .form__div {
+        .container {
             @include boxcenter();
-            flex-direction: column;
-            gap: 30px;
-            margin-bottom: 55px; 
-                #datastyle {
-                    border-radius: 10px;
-                    border-color: #e092d3;
-                    width: 80%;
-                    padding: 10px;
-                    text-align: center; 
-                    font-size: 15px;
-                }
-        }       
-        .opinion {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-                div textarea {
-                    border-radius: 10px;
-                    box-shadow: 0, 0, 0, 0.40px black;
-                }
-
-                .button__container {
-                    display: flex;
-                    justify-content: space-between; 
-                }
-        
-        
-        }
-        .form__title {
-            margin-bottom: 10px;
-            color: white;
-            font-size: 35px;
-            text-shadow: 2px 2px 2px #ee4cd3;
-        }           
+            padding: 0;
+            width: 100%;
+                .row {
+                    width: 100%;
+                        .form__div {
+                            @include boxcenter();
+                            width: 100%;
+                            text-align: center;
+                            flex-direction: column;
+                            gap: 30px;
+                            margin-bottom: 30px;
+                                #datastyle {
+                                    border-color: #e092d3;
+                                    width: 100%;
+                                    padding: 10px;
+                                    text-align: center;
+                                    font-size: 15px;
+                                }
+                                                   
+                                .form__title {
+                                    margin-bottom: 10px;
+                                    color: white;
+                                    font-size: 35px;
+                                    text-shadow: 2px 2px 2px #ee4cd3;
+                                }
+                        }    
+                }           
+        }    
+    
+    .container {
+        @include boxcenter();
+            .row {
+                width: 100%;
+                    .opinion {
+                        display: flex;
+                        justify-content: center;
+                        text-align: center;
+                        width: 100%;
+                        flex-direction: column;
+                        gap: 10px;
+                            div {
+                                width: 100%;
+                                    textarea {
+                                        width: 100%;
+                                        border-radius: 10px;
+                                        box-shadow: 0, 0, 0, 0.40px black;
+                                    }
+                            }
+                        .button__container {
+                            display: flex;
+                            justify-content: space-between;
+                        }
+                        .form__title {
+                            margin-bottom: 10px;
+                            color: white;
+                            font-size: 30px;
+                            text-shadow: 2px 2px 2px #ee4cd3;
+                        }
+                    }       
+            }
+    }
+    
     footer {
         margin-top: 40px;
     }    
