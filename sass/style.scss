@@ -90,20 +90,27 @@
 /* SECCIÓN GALERÍA */
 
 .galerybody {
-    background-image: url(../Imagenes/planet5.webp);
-    h3 {
-        font-size: 50px;
-        color: #e092d3;
-        font-family: 'PT Serif', serif;
-        margin-left: 15px;
-        margin-top: 10px;
-        text-shadow: 2px 2px 2px black;
+    background-image: url(../Imagenes/planets.jpg);
+    
+    .title__center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+            h2 {
+                font-size: 35px;
+                color: #e092d3;
+                font-family: 'PT Serif', serif;
+                margin-left: 15px;
+                margin-top: 10px;
+                text-shadow: 2px 2px 2px black;
+            }
     }
+    
     .galery {
         display: flex;
         gap: 20px;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: center;    
             .aumentar__img {
                 transition: transform 0.1s ease-in;
                 &:hover {
